@@ -1,4 +1,45 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #2b2b4b;
+  color: white;
+}
+section.jokes-project{
+  height: 100dvh;
+  width: 100%;
+  border-bottom: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.joke-container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;  
+}
+.joke-container .jokes-btn{
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+.joke-container .jokes-btn button{
+    color: white;
+    background: skyblue;
+    height: 30px;
+    width: 80px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.25s;
+}
+.joke-container .jokes-btn button:disabled{
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.joke-container .jokes-btn button:active{
+  transform: scale(0.95);
 }

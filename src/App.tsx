@@ -1,10 +1,12 @@
-import { Button } from "./topics/02/props-with-type.tsx"
+import JokePage from "./pages/JokePage.tsx";
 
 function App() {
 
   return (
     <>
-      <Button label="Click Me" onClick={()=>alert("Clicked!")}/>
+    <section className="jokes-project">
+      <JokePage/>
+    </section>
     </>
   )
 }
